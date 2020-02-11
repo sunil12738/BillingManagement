@@ -20,7 +20,7 @@ class AddBillModal extends React.Component {
     return (
       <div className="modal-wrap" ref={(el) => {this.modal = el}}>
         <Modal isOpen={modal} toggle={toggle} className={"className"}>
-          <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+          <ModalHeader toggle={toggle}>Add new bill</ModalHeader>
           <ModalBody>
             <Form>
               <FormGroup>
@@ -34,7 +34,7 @@ class AddBillModal extends React.Component {
                 </Input>
               </FormGroup>
               <FormGroup>
-                <Label for="amount">Amount (INR)</Label>
+                <Label for="amount">Amount (₹)</Label>
                 <Input type="text" name="amount" id="amount" placeholder="" />
               </FormGroup>
               <FormGroup>

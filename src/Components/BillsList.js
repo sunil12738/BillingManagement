@@ -7,11 +7,15 @@ class BillsList extends React.Component {
     }
 
     render() {
+        const { billInitData } = this.props
         return (
             <div className="bills-list p-5">
-                <h5 className="text-center">You have the following bills</h5>
+                {billInitData.length > 0
+                    ? <h5 className="text-center">You have the following bills</h5>
+                    : <h5 className="text-center">No bill found. Add new from top</h5>
+                }
                 <div className="cards-wrap">
-                    {this.props.billInitData.map(data => (
+                    {billInitData.map(data => (
                         <div className={`card-wrap ${this.props.billsCanBePaid.indexOf(data.id) >= 0 ? "border-card" : ""}`}>
                             <BillCard
                                 data={data}
@@ -36,7 +40,7 @@ const BillCard = ({ data, deleteBill, editBill }) => {
                 <CardText>
                     Id: {data.id}<br/>
                     Category: {data.category}<br/>
-                    Amount: {data.amount}<br/>
+                    Amount: ₹ {data.amount}<br/>
                     Date: {data.date}
                 </CardText>
                 <Button

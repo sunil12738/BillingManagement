@@ -60,6 +60,15 @@
 
 .border-card {
   border: 3px solid #F99;
+  position: relative;
+}
+
+.border-card::before {
+  content: "You need to pay the selected one";
+  position: absolute;
+  top: -26px;
+  color:#F99;
+  left: -2px;
 }
 
 .add-bill-wrap {

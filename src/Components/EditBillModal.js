@@ -47,7 +47,7 @@ class AddBillModal extends React.Component {
                 </Input>
               </FormGroup>
               <FormGroup>
-                <Label for="amount">Amount (INR)</Label>
+                <Label for="amount">Amount (₹)</Label>
                 <Input type="text" name="amount" id="amount" placeholder="" />
               </FormGroup>
               <FormGroup>
