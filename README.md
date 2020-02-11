@@ -27,3 +27,5 @@ Serve the folder using a server<br/>
 - Calendar can be shown instead of normal input for dates
 - UI needs to be improved
 - Sorting functionality can also be given
+
+**Note: The current production build for this project is deployed at `https://sunil12738.github.io/`.**
