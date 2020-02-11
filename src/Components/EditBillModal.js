@@ -33,7 +33,7 @@ class AddBillModal extends React.Component {
     return (
       <div className="modal-wrap" ref={(el) => {this.modal = el}}>
         <Modal isOpen={modal} toggle={toggle} className={"className"}>
-          <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+          <ModalHeader toggle={toggle}>Edit Bill</ModalHeader>
           <ModalBody>
             <Form>
               <FormGroup>
